@@ -13,3 +13,7 @@ WORKDIR C:\inetpub\wwwroot
 
 # Copy developer tools and entrypoint
 COPY --from=tools C:\tools C:\tools
+
+# ENV NODE_TLS_REJECT_UNAUTHORIZED "0"
+# ENV http_proxy "http://host.docker.internal:8888/"
+# ENV https_proxy "http://host.docker.internal:8888/"
